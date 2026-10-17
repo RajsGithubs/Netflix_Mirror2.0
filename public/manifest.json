@@ -1,0 +1,17 @@
+{
+  "name": "StreamVerse — Ultimate Streaming Hub",
+  "short_name": "StreamVerse",
+  "description": "Cross-platform, ad-free, redirect-free, low-network-resilient streaming for Movies, TV Series, Anime, and Live TV.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#09090b",
+  "theme_color": "#09090b",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

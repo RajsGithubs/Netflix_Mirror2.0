@@ -1,0 +1,170 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #141414;
+  --foreground: #FFFFFF;
+  --surface: #181818;
+  --surface-elevated: #242424;
+  --brand: #E50914;
+  --brand-hover: #F40612;
+  --text-secondary: #AAAAAA;
+  --border-muted: rgba(255, 255, 255, 0.15);
+}
+
+body {
+  color: var(--foreground);
+  background-color: #141414;
+  font-family: 'Netflix Sans', 'Helvetica Neue', Segoe UI, Roboto, Ubuntu, sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom sleek OTT scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #141414;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333333;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555555;
+}
+
+/* Netflix Signature Top 10 Outline Stroke Typography */
+.netflix-top10-number {
+  font-family: 'Impact', 'Arial Black', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 8.5rem;
+  font-weight: 900;
+  line-height: 0.72;
+  letter-spacing: -0.06em;
+  color: #141414;
+  -webkit-text-stroke: 4.5px #595959;
+  text-shadow: 0 4px 16px rgba(0, 0, 0, 0.95);
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .netflix-top10-number {
+    font-size: 11rem;
+    -webkit-text-stroke: 5.5px #6e6e6e;
+  }
+}
+
+/* Netflix Slider Arrow Handle */
+.slider-handle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 3.5rem;
+  background-color: rgba(20, 20, 20, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 30;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  opacity: 0;
+}
+
+.group-row:hover .slider-handle {
+  opacity: 1;
+}
+
+.slider-handle:hover {
+  background-color: rgba(20, 20, 20, 0.85);
+}
+
+/* Glassmorphism helpers */
+.glass-panel {
+  background: rgba(24, 24, 24, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.glass-dropdown {
+  background: rgba(20, 20, 20, 0.96);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* Hide scrollbars for carousel rows */
+.scrollbar-none {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+
+/* Cinema OTT Subtitle Styling */
+video::cue {
+  background-color: rgba(0, 0, 0, 0.75);
+  color: #ffffff;
+  font-family: 'Netflix Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 1.15rem;
+  line-height: 1.4;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.9);
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+}
+
+@keyframes subtle-pulse {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(229, 9, 20, 0.4);
+  }
+  50% {
+    transform: scale(1.06);
+    box-shadow: 0 0 25px 6px rgba(229, 9, 20, 0.6);
+  }
+}
+
+.animate-subtle-pulse {
+  animation: subtle-pulse 2.2s ease-in-out infinite;
+}
+
+@keyframes ping-once {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  40% {
+    transform: scale(1.08);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-ping-once {
+  animation: ping-once 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes spin-once {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+.animate-spin-once {
+  animation: spin-once 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
