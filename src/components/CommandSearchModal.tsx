@@ -275,7 +275,7 @@ export default function CommandSearchModal({ isOpen, onClose }: CommandSearchMod
             <span>↵ Select</span>
             <span>ESC Close</span>
           </div>
-          <span className="text-[#E50914] font-medium">Netflix 2.0 Instant Search</span>
+          <span className="text-[#E50914] font-medium">Flix Movie Instant Search</span>
         </div>
       </div>
     </div>

@@ -87,13 +87,13 @@ export default function Navbar({ onOpenSearch }: NavbarProps) {
       <div className="flex items-center justify-between h-16 sm:h-20 gap-4">
         {/* Left Side: Brand Logo and Primary Nav Links */}
         <div className="flex items-center gap-6 lg:gap-10">
-          {/* Netflix 2.0 Wordmark Logo */}
+          {/* Flix Movie Wordmark Logo */}
           <Link href="/" className="flex items-center gap-1.5 group">
             <span className="text-[#E50914] font-black text-2xl sm:text-3xl tracking-tighter uppercase font-sans drop-shadow-md group-hover:scale-105 transition-transform">
-              NETFLIX
+              FLIX
             </span>
             <span className="px-1.5 py-0.5 rounded text-[11px] font-black bg-[#E50914] text-white tracking-widest uppercase">
-              2.0
+              MOVIE
             </span>
           </Link>
 
@@ -302,7 +302,7 @@ export default function Navbar({ onOpenSearch }: NavbarProps) {
                       }}
                       className="w-full text-center py-1 hover:underline text-zinc-400 hover:text-white font-semibold"
                     >
-                      Sign out of Netflix 2.0
+                      Sign out of Flix Movie
                     </button>
                   </div>
                 </div>

@@ -182,7 +182,7 @@ export default function AccountPage() {
         {/* Brand Audio Sonic Mark */}
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pt-3 border-t border-white/5">
           <div>
-            <h3 className="text-sm font-bold text-white">Netflix 2.0 Sonic Brand Audio</h3>
+            <h3 className="text-sm font-bold text-white">Flix Movie Sonic Brand Audio</h3>
             <p className="text-xs text-zinc-400">
               Plays the synthesized Web Audio signature sound effect when launching movies.
             </p>

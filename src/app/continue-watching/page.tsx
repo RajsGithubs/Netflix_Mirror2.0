@@ -149,7 +149,7 @@ export default function ContinueWatchingPage() {
           </div>
           <h2 className="text-xl font-bold text-white">No In-Progress Titles</h2>
           <p className="text-sm text-zinc-400 max-w-md mx-auto">
-            When you watch movies or series on Netflix 2.0, your playback progress will be saved here so you can resume anytime.
+            When you watch movies or series on Flix Movie, your playback progress will be saved here so you can resume anytime.
           </p>
           <Link
             href="/"

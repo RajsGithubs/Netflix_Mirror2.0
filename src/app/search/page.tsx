@@ -136,7 +136,7 @@ function SearchContent() {
       {isSearching ? (
         <div className="py-20 text-center space-y-3">
           <div className="w-10 h-10 border-4 border-brand-500 border-t-transparent rounded-full animate-spin mx-auto" />
-          <p className="text-zinc-400 text-sm">Searching Netflix 2.0 catalog...</p>
+          <p className="text-zinc-400 text-sm">Searching Flix Movie catalog...</p>
         </div>
       ) : query && results.length > 0 ? (
         <div className="space-y-4">
@@ -165,7 +165,7 @@ function SearchContent() {
         <div className="space-y-4 pt-4">
           <h2 className="text-lg font-bold text-white flex items-center gap-2">
             <TrendingUp className="w-5 h-5 text-brand-500" />
-            Trending on Netflix 2.0
+            Trending on Flix Movie
           </h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3 sm:gap-4">
             {trending.map((item, index) => (

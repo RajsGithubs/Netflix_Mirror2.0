@@ -48,7 +48,7 @@ export default function WatchlistPage() {
             My List
           </h1>
           <p className="text-xs sm:text-sm text-zinc-400 mt-1">
-            Titles you have saved to watch later on Netflix 2.0.
+            Titles you have saved to watch later on Flix Movie.
           </p>
         </div>
 

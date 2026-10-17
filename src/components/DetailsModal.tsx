@@ -350,7 +350,7 @@ export default function DetailsModal({
                       </div>
                       <h4 className="text-sm font-bold text-white truncate">{rec.title}</h4>
                       <p className="text-xs text-zinc-400 line-clamp-2">
-                        {rec.description || 'Watch now on Netflix 2.0 in full high definition.'}
+                        {rec.description || 'Watch now on Flix Movie in full high definition.'}
                       </p>
                     </div>
                   </div>

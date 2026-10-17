@@ -141,9 +141,9 @@ function HomeContent() {
               />
             )}
 
-            {/* Popular on Netflix 2.0 */}
+            {/* Popular on Flix Movie */}
             <MovieRow
-              title="Popular on Netflix 2.0"
+              title="Popular on Flix Movie"
               items={series}
               viewAllHref="/series"
               onOpenDetails={handleOpenDetails}
@@ -205,7 +205,7 @@ export default function HomePage() {
       fallback={
         <div className="py-24 text-center space-y-4">
           <div className="w-10 h-10 border-4 border-[#E50914] border-t-transparent rounded-full animate-spin mx-auto" />
-          <p className="text-zinc-400 text-sm">Loading Netflix 2.0...</p>
+          <p className="text-zinc-400 text-sm">Loading Flix Movie...</p>
         </div>
       }
     >
